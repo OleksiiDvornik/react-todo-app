@@ -2,10 +2,16 @@
 $body-bg-color: rgb(131,58,180);
 $body-bg-gradient: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(69,177,252,1) 100%);
 $todos-bg-color: rgba(22, 26, 43, 1);
+$form-input-border: rgb(209, 101, 255);
+$form-button-bg: linear-gradient(90deg, rgb(209, 101, 255) 0%, rgb(198, 67, 255) 100%);
+$form-button-bg-hover: linear-gradient(90deg, rgb(209, 92, 255) 0%, rgb(202, 34, 255) 100%);
+$subtitle-border-color: rgba(20, 159, 255, 0.7);
+$item-bg-color: linear-gradient(90deg, rgba(20, 159, 255, 1) 0%, rgba(17, 122, 255, 1) 100%);
 $text: #FFFFFF;
+$text-disabled: rgba(255, 255, 255, 0.3);
 
 //Fonts
-$font-family: 'Open Sans', 'Trebuchet MS', 'sans-serif';
+$font-family: 'Trebuchet MS', sans-serif;
 
 // Breakpoints
 
