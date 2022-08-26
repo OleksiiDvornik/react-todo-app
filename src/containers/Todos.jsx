@@ -24,6 +24,30 @@ function Todos() {
         localStorage.setItem('todos', JSON.stringify(newTodos));
     }
 
+    //Check todo item
+    const checkTodo = ({ id, checked }) => {
+        const newTodos = todos.map(item => {
+            if (item.id === id) {
+                item.checked = checked;
+            }
+            return item;
+        })
+        setTodos(newTodos);
+        localStorage.setItem('todos', JSON.stringify(newTodos));
+    }
+
+    //Update todo item
+    const updateTodo = ({ id, newDescription }) => {
+        const updateTodos = todos.map(item => {
+            if (item.id === id) {
+                item.description = newDescription;
+            }
+            return item;
+        })
+        setTodos(updateTodos);
+        localStorage.setItem('todos', JSON.stringify(updateTodos));
+    }
+
     //Delete todo item
     const deleteTodo = (id) => {
         const newTodos = todos.filter(item => item.id !== id);
@@ -44,8 +68,10 @@ function Todos() {
                                 description={item.description}
                                 id={item.id}
                                 key={item.id}
-                                onDelete={deleteTodo}
-                                checked={item.checked}/>
+                                checked={item.checked}
+                                onCheck={checkTodo}
+                                onUpdate={updateTodo}
+                                onDelete={deleteTodo}/>
                         ))
                         : <span className='todos__list-text'>Задач нет</span>}
                 </div>
