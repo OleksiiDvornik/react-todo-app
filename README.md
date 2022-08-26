@@ -1,36 +1,28 @@
-## Available Scripts
+# Simple Todo App on React
 
-In the project directory, you can run:
+![Todo app preview cover](https://repository-images.githubusercontent.com/528359213/e7e7f5ee-d0ca-4560-b586-35d314386d83)
 
-### `npm start`
+A simple to-do app built with React and SCSS. It has add, delete, mark complete and edit existing tasks features. All items are stored in Local Storage and available after a browser restart.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Required packages
 
-### `npm test`
+| Package      | Description |
+| ----------- | ----------- |
+| [sass](https://www.npmjs.com/package/sass) | Needed to compile SASS/SCSS files |
+| [uuidv4](https://www.npmjs.com/package/uuidv4) | Used to generate unique ID's for to-do items |
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Getting Start
 
-### `npm run build`
+```sh
+$ git clone https://github.com/OleksiiDvornik/react-todo-app.git
+$ cd react-todo-app
+$ npm i
+$ npm start
+```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+It may take a little long to run for the first time, so wait till the browser show up.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Demo
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+![Demo](https://github.com/OleksiiDvornik/react-todo-app/blob/main/demo.gif)
