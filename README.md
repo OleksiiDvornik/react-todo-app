@@ -26,3 +26,5 @@ It may take a little long to run for the first time, so wait till the browser sh
 ## Demo
 
 ![Demo](https://github.com/OleksiiDvornik/react-todo-app/blob/main/demo.gif)
+
+You can also test the app on <a href="https://react-todo-app-oleksiidvornik.vercel.app/" target="_blank">https://react-todo-app-oleksiidvornik.vercel.app/</a> 
