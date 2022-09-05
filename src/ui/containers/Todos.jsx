@@ -8,8 +8,11 @@ import Form from "../components/Form";
 import Subtitle from "../components/Subtitle";
 import Item from "../components/Item";
 
-function Todos() {
+//Styles
+import useStyles from "./todosStyle";
 
+function Todos() {
+    const classes = useStyles();
     const [todos, setTodos] = useState([]);
 
     //Download todos from local storage
@@ -57,11 +60,11 @@ function Todos() {
 
     return (
         <ErrorBoundary>
-            <div className="todos">
-                <Title className="title todos__title">Какие планы на сегодня?</Title>
-                <Form className="form todos__form" onAdd={addTodo}/>
-                <Subtitle className="subtitle todos__subtitle">Все задачи</Subtitle>
-                <div className='todos__list'>
+            <div className={classes.todos}>
+                <Title>Какие планы на сегодня?</Title>
+                <Form onAdd={addTodo}/>
+                <Subtitle>Все задачи</Subtitle>
+                <div className={classes.list}>
                     {todos.length !== 0
                         ? todos.map(item => (
                             <Item
@@ -73,7 +76,7 @@ function Todos() {
                                 onUpdate={updateTodo}
                                 onDelete={deleteTodo}/>
                         ))
-                        : <span className='todos__list-text'>Задач нет</span>}
+                        : <span className={classes.text}>Задач нет</span>}
                 </div>
             </div>
         </ErrorBoundary>

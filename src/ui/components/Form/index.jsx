@@ -2,8 +2,12 @@
 import React from "react";
 import { v4 } from 'uuid';
 
-function Form({ className, onAdd }) {
-   
+//Styles
+import useStyles from "./style";
+
+function Form({ onAdd }) {
+    const classes = useStyles();
+    
     const handleAdd = (event) => {
         event.preventDefault();
         onAdd({id: v4(), description: event.target.description.value});
@@ -11,14 +15,14 @@ function Form({ className, onAdd }) {
     }
 
     return (
-        <form action="#" className={className} onSubmit={handleAdd}>
+        <form action="#" className={classes.form} onSubmit={handleAdd}>
             <input 
-                className="form__input" 
+                className={classes.input}
                 type="text" 
                 name="description" 
                 placeholder="Добавить новую задачу..."/>
             <button
-                className="form__button" 
+                className={classes.button}
                 type="submit">Добавить</button>
         </form>
     )

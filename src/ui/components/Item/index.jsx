@@ -2,11 +2,14 @@
 import React, { useState } from "react";
 
 //Parts
-import Button from "./Button";
-import Input from "./Input";
+import Button from "../Button";
+import Input from "../Input";
 
+//Styles
+import useStyles from "./style";
 
 function Item({ description, checked, ...props }) {
+    const classes = useStyles();
     const [showInput, setShowInput] = useState(false);
 
     const handleChecked = () => {
@@ -31,17 +34,20 @@ function Item({ description, checked, ...props }) {
     }
     
     return (
-        <div className={"todos__list-item" + (checked ? " checked" : "")}>
-            <label className="todos__list-item-label">
+        <div className={classes.item + (checked ? " checked" : "")}>
+            <label className={classes.label}>
                 <input 
-                    className="todos__list-item-check" 
                     type="checkbox" 
                     defaultChecked={checked} 
                     onClick={handleChecked}/>
-                <span className="todos__list-item-desc">{description}</span>
+                <span className={classes.description}>{description}</span>
             </label>
-            <Button type="edit" action={handleEdit}/>
-            <Button type="delete" action={handleDelete}/>
+            <Button 
+                className={classes.editButton} 
+                action={handleEdit}/>
+            <Button 
+                className={classes.deleteButton} 
+                action={handleDelete}/>
             {showInput && <Input placeholder={description} action={handleUpdate}/>}
         </div>
     )

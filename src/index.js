@@ -3,10 +3,10 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 
 //Helpers
-import "./helpers/assets/scss/style.scss";
+import "./ui/_helpers/assets/styles/index.scss";
 
 //Parts
-import Todos from "./containers/Todos";
+import Todos from "./ui/containers/Todos";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(

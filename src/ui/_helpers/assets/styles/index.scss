@@ -1,3 +1,17 @@
+/* Variables */
+
+// Colors
+
+$body-bg-color: rgb(131,58,180);
+$body-bg-gradient: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(69,177,252,1) 100%);
+$text: #FFFFFF;
+
+//Fonts
+
+$font-family: 'Trebuchet MS', sans-serif;
+
+/* Styles */
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -16,10 +30,22 @@
     color: $text;
     background: $body-bg-color;
     background: $body-bg-gradient;
-  }
+}
 
-  .container {
+.container {
     max-width: 1024px;
     margin: 0 auto;
     padding: 0 12px;
-  }
+}
+
+/* Animation */
+
+@keyframes lineThrough {
+    0% {
+      width: 0;
+    }
+  
+    100% {
+      width: 75%;
+    }
+}
