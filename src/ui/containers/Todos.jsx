@@ -9,7 +9,7 @@ import Subtitle from "../components/Subtitle";
 import Item from "../components/Item";
 
 //Styles
-import useStyles from "./todosStyle";
+import useStyles from "./todosStyles";
 
 function Todos() {
     const classes = useStyles();

@@ -3,7 +3,7 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 
 //Helpers
-import "./ui/_helpers/assets/styles/index.scss";
+import "./styles.css";
 
 //Parts
 import Todos from "./ui/containers/Todos";
