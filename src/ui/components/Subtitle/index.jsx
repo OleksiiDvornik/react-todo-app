@@ -1,8 +1,5 @@
-//Core
-import React from "react";
-
 //Styles
-import useStyles from "./style";
+import useStyles from './styles';
 
 function Subtitle({ children }) {
     const classes = useStyles();

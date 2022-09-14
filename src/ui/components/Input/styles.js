@@ -1,8 +1,8 @@
 //Core
-import { createUseStyles } from "react-jss";
-import styles from "../../../engine/config";
+import { createUseStyles } from 'react-jss';
+import theme from '../../../engine/theme';
 
-const { colors, fonts } = styles;
+const { colors, fonts } = theme;
 
 const useStyles = createUseStyles({
     input: {

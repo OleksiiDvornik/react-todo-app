@@ -1,15 +1,16 @@
 //Core
-import { createUseStyles } from "react-jss";
-import styles from "../../../engine/config";
+import { createUseStyles } from 'react-jss';
+import theme from '../../../engine/theme';
 
-const { colors, fonts } = styles;
+const { colors, fonts } = theme;
 
 const useStyles = createUseStyles({
     form: {
         display: 'flex',
-        width: '100%',
+        flexWrap: 'wrap',
+        justifyContent: 'space-between',
         alignItems: 'center',
-        position: 'relative',
+        width: '100%',
         marginBottom: 30
     },
     input: {
@@ -22,7 +23,7 @@ const useStyles = createUseStyles({
         color: colors.text,
         border: `3px solid ${colors.formInputBorder}`,
         outline: 'none',
-        borderRadius: '6px 0 0 6px',
+        borderRadius: 6,
         boxShadow: 'inset 0 0 0 1px rgba(0, 0, 0, 0.1)',
         backgroundColor: 'transparent',
         '&:focus': {
@@ -35,17 +36,19 @@ const useStyles = createUseStyles({
     },
     button: {
         display: 'flex',
+        width: 'calc(50% - 10px)',
         height: 50,
+        justifyContent: 'center',
         alignItems: 'center',
         fontFamily: fonts.fontFamily,
         fontSize: 16,
         padding: '0 20px',
         color: colors.text,
-        borderRadius: '0 6px 6px 0',
+        borderRadius: 6,
         border: 'none',
         outline: 'none',
         background: colors.formButtonBackground,
-        transition: 'all 0.4s',
+        transition: 'all 0.2s',
         '&:hover, &:focus': {
             cursor: 'pointer',
             background: colors.formButtonBackgroundHover

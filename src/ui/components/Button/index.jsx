@@ -1,6 +1,3 @@
-//Core
-import React from "react";
-
 function Button({ className, action, children }) {
     return (
         <button 

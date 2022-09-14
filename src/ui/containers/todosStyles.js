@@ -1,8 +1,8 @@
 //Core
-import { createUseStyles } from "react-jss";
-import styles from "../../engine/config";
+import { createUseStyles } from 'react-jss';
+import theme from '../../engine/theme';
 
-const { colors } = styles;
+const { colors } = theme;
 
 const useStyles = createUseStyles({
     todos: {

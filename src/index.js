@@ -1,16 +1,9 @@
 //Core
-import React from "react";
-import ReactDOM from "react-dom/client";
-
-//Helpers
-import "./styles.css";
+import React from 'react';
+import ReactDOM from 'react-dom/client';
 
 //Parts
-import Todos from "./ui/containers/Todos";
+import App from './ui/containers/App';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
-    <React.StrictMode>
-        <Todos />
-    </React.StrictMode>
-);
+root.render(<App/>);

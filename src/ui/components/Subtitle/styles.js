@@ -1,5 +1,5 @@
-import { createUseStyles } from "react-jss";
-import styles from "../../../engine/config";
+import { createUseStyles } from 'react-jss';
+import styles from '../../../engine/theme';
 
 const { colors } = styles;
 

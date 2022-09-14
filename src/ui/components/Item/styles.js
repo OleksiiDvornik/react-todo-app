@@ -1,14 +1,14 @@
 //Core
-import { createUseStyles } from "react-jss";
-import styles from "../../../engine/config";
+import { createUseStyles } from 'react-jss';
+import theme from '../../../engine/theme';
 
 //Assets
-import editIcon from "../../_helpers/assets/img/edit-white.png";
-import editIconHover from "../../_helpers/assets/img/edit.png";
-import removeIcon from "../../_helpers/assets/img/remove-white.png";
-import removeIconHover from "../../_helpers/assets/img/remove.png";
+import editIcon from '../../_helpers/assets/img/edit-white.png';
+import editIconHover from '../../_helpers/assets/img/edit.png';
+import removeIcon from '../../_helpers/assets/img/remove-white.png';
+import removeIconHover from '../../_helpers/assets/img/remove.png';
 
-const { colors } = styles;
+const { colors } = theme;
 
 const useStyles = createUseStyles({
     item: {

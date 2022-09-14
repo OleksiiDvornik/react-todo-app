@@ -1,6 +1,5 @@
-//Core
-import React from "react";
-import useStyles from "./style";
+//Styles
+import useStyles from './styles';
 
 function Title({ children }) {
     const classes = useStyles();

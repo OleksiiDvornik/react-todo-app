@@ -1,40 +1,43 @@
-//Core
-import React, { useState } from "react";
+//Core 
+import { useState } from 'react';
+import { useDispatch, useSelector } from 'react-redux';
+
+//Engine
+import { deleteTodo, completeTodo, updateTodo } from '../../../engine/core/todo/thunk';
+import { selectors } from '../../../engine/core/todo/selectors';
 
 //Parts
-import Button from "../Button";
-import Input from "../Input";
+import Button from '../Button';
+import Input from '../Input';
 
 //Styles
-import useStyles from "./style";
+import useStyles from './styles';
 
-function Item({ description, checked, ...props }) {
-    const classes = useStyles();
+function Item({ id, description, checked }) {
+    const dispatch = useDispatch();
+    const todos = useSelector(selectors.todos);
     const [showInput, setShowInput] = useState(false);
-
-    const handleChecked = () => {
-        const { id, onCheck } = props;
-        onCheck({id, checked: !checked});
-    }
-    
-    const handleEdit = () => {
-        setShowInput(!showInput);
-    }
+    const classes = useStyles();
 
     const handleDelete = () => {
-        const  {id, onDelete } = props;
-        onDelete(id);
-    }
+        dispatch(deleteTodo(todos, id));
+    };
+
+    const handleChecked = (event) => {
+        dispatch(completeTodo(event, todos, id));
+    };
 
     const handleUpdate = (value) => {
-        const newDescription = value;
-        const { id, onUpdate } = props;
-        onUpdate({id, newDescription});
-        setShowInput(!showInput);
-    }
-    
+        if (showInput === false) {
+            setShowInput(!showInput);
+        } else {
+            dispatch(updateTodo(todos, id, value));
+            setShowInput(!showInput);
+        }
+    };
+
     return (
-        <div className={classes.item + (checked ? " checked" : "")}>
+        <div className={classes.item + (checked ? ' checked' : '')}>
             <label className={classes.label}>
                 <input 
                     type="checkbox" 
@@ -44,7 +47,7 @@ function Item({ description, checked, ...props }) {
             </label>
             <Button 
                 className={classes.editButton} 
-                action={handleEdit}/>
+                action={handleUpdate}/>
             <Button 
                 className={classes.deleteButton} 
                 action={handleDelete}/>

@@ -1,4 +1,4 @@
-import {Component} from "react";
+import { Component } from 'react';
 
 class ErrorBoundary extends Component {
     constructor(props) {
@@ -18,7 +18,7 @@ class ErrorBoundary extends Component {
         const {hasError} = this.state;
         const {children} = this.props;
         return hasError
-            ? <p className='error'>Упс! Что-то пошло не так. Попробуйте обновить страницу.</p>
+            ? <p className="error">Упс! Что-то пошло не так. Попробуйте обновить страницу.</p>
             : children;
     }
 }
