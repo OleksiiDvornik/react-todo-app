@@ -17,7 +17,7 @@ function Footer() {
     const classes = useStyles();
 
     const handleClear = () => {
-        dispatch(clearTodos());
+        dispatch(clearTodos(todos));
     };
     return (
         <div className={classes.footer}>
