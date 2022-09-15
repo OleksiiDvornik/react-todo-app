@@ -1,14 +1,3 @@
 {
-  "todos": [
-    {
-      "id": "a8adbdfe-d0ef-4501-9ee3-c21861652a5a",
-      "description": "One more task",
-      "checked": false
-    },
-    {
-      "id": "9e46e6e6-5467-4dcd-bbb8-d8bc7d6a04e5",
-      "description": "Update todo list app",
-      "checked": true
-    }
-  ]
+  "todos": []
 }
