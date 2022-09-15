@@ -29,9 +29,9 @@ function Todos() {
     return (
         <ErrorBoundary>
             <div className={classes.todos}>
-                <Title>Какие планы на сегодня?</Title>
+                <Title>Які плани на сьогодні?</Title>
                 <Form/>
-                <Subtitle>Все задачи</Subtitle>
+                <Subtitle>Усі задачі</Subtitle>
                 <div className={classes.list}>
                     {todos.length !== 0
                         ? todos.map(item => (
@@ -42,7 +42,7 @@ function Todos() {
                                 checked={item.checked}
                             />
                         ))
-                        : <span className={classes.text}>Задач нет</span>}
+                        : <span className={classes.text}>Задач немає</span>}
                 </div>
                 <Footer/>
             </div>

@@ -44,7 +44,7 @@ function TodoForm() {
                                             name={name} key={index}
                                             type="text"
                                             className={classes.input}
-                                            placeholder="Добавить новую задачу..."
+                                            placeholder="Додати нову задачу..."
                                             showDelete={fields.length > 1}
                                             onRemove={() => fields.remove(index)}
                                             validate={validateField}/>
@@ -52,11 +52,11 @@ function TodoForm() {
                                     <button
                                         disabled={Object.keys(errors).length !== 0}
                                         className={classes.button}
-                                        type="submit">Сохранить</button>
+                                        type="submit">Зберегти</button>
                                     <button
                                         className={classes.button}
                                         onClick={() => fields.push('')}
-                                        type="button">Добавить поле</button>
+                                        type="button">Додати поле</button>
                                 </>
                             )}
                         </FieldArray>

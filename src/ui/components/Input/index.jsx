@@ -26,7 +26,7 @@ function Input({ placeholder, action }) {
                 onKeyDown={(event) => event.key === "Enter" ? action(value) : undefined}/>
             <Button
                 className={classes.button} 
-                action={() => action(value)}>Сохранить</Button>
+                action={() => action(value)}>Зберети</Button>
         </div>
     )
 }
