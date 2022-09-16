@@ -1,36 +1,55 @@
-## Available Scripts
+# Simple Todo App on React
 
-In the project directory, you can run:
+![Todo app preview cover](https://repository-images.githubusercontent.com/528359213/2e42a33c-3462-449e-8219-a02fbad2fc8a)
 
-### `npm start`
+A simple to-do app built with React and json-server. The app can add a few items at the same time, delete, mark complete and edit existing tasks. All items are stored in demo data base file which created by json-server library.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Required packages
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+| Package      | Description |
+| ----------- | ----------- |
+| [axios](https://www.npmjs.com/package/axios) | Simplifies interaction with the server API |
+| [react-jss](https://www.npmjs.com/package/react-jss) | JSS integration with React |
+| [react-redux](https://www.npmjs.com/package/react-redux) | Official React bindings for Redux |
+| [redux-thunk](https://www.npmjs.com/package/redux-thunk) | Thunk middleware for Redux |
+| [react-final-form](https://www.npmjs.com/package/react-final-form) |  High performance subscription-based form state management for React |
+| [react-final-form-arrays](https://www.npmjs.com/package/react-final-form-arrays) | Provides a way to render arrays in React Final Form |
+| [final-form-arrays](https://www.npmjs.com/package/final-form-arrays) | Array Mutators for Final Form |
+| [uuidv4](https://www.npmjs.com/package/uuidv4) | Generate unique ID's for to-do items |
+| [json-server](https://www.npmjs.com/package/json-server) | Fake REST API |
 
-### `npm test`
+## Getting started
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+```
+$ git clone https://github.com/OleksiiDvornik/react-todo-app.git
+$ cd react-todo-app
+$ npm i --force
+$ npm run server
+$ npm start
+```
+ 
+> You should use "--force" flag to install the react-final-form-arrays library because its version is not currently compatible with React version 18 and higher.
 
-### `npm run build`
+## Folders structure
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```
+src/
+    engine/
+        config/
+        core
+            todo/  
+        init/ 
+    ui/
+        _helpers/
+            assets/
+        components/
+        containers/
+```
+- **engine folder** — contains configuration files related to application setup and logic.
+- **ui folder** — contains everything related to the visual interface of the application: containers, components, assets, etc.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Demo
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+![Demo](https://github.com/OleksiiDvornik/react-todo-app/blob/main/demo.gif)
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+You can also test the app on <a href="https://react-todo-app-oleksiidvornik.vercel.app/" target="_blank">https://react-todo-app-oleksiidvornik.vercel.app/</a> 

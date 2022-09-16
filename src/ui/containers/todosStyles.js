@@ -1,6 +1,6 @@
 //Core
 import { createUseStyles } from 'react-jss';
-import theme from '../../engine/theme';
+import theme from '../../engine/config/theme';
 
 const { colors } = theme;
 

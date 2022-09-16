@@ -21,7 +21,7 @@ function Footer() {
     };
     return (
         <div className={classes.footer}>
-            {todos.length !== 0 && <span className={classes.text}>Всего задач: {todos.length}</span>}
+            {todos.length !== 0 && <span className={classes.text}>Усього задач: {todos.length}</span>}
             {todos.length !== 0 && <Button className={classes.button} action={handleClear}>Очистити список</Button>}
         </div>
     )
