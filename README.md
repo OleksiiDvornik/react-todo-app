@@ -23,12 +23,10 @@ A simple to-do app built with React and json-server. The app can add a few items
 ```
 $ git clone https://github.com/OleksiiDvornik/react-todo-app.git
 $ cd react-todo-app
-$ npm i --force
+$ npm i 
 $ npm run server
 $ npm start
 ```
- 
-> You should use "--force" flag to install the react-final-form-arrays library because its version is not currently compatible with React version 18 and higher.
 
 ## Folders structure
 
