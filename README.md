@@ -44,8 +44,10 @@ src/
         containers/
 ```
 - **engine folder** — contains configuration files related to application setup and logic.
-- **ui folder** — contains everything related to the visual interface of the application: containers, components, assets, etc.
+- **ui folder** — contains files related to the visual interface of the application: containers, components, assets, etc.
 
 ## Demo
 
 ![Demo](https://github.com/OleksiiDvornik/react-todo-app/blob/main/demo.gif)
+
+You can also test the application here: <a href="https://oleksiidvornik-todo-app.herokuapp.com" target="_blank">https://oleksiidvornik-todo-app.herokuapp.com</a>
