@@ -1,14 +1,3 @@
 {
-  "todos": [
-    {
-      "id": "8e20ca90-8927-4ac6-b8f3-cadc5127a137",
-      "description": "Дописати README файл",
-      "checked": false
-    },
-    {
-      "id": "0f206a93-19e7-4032-8c76-cfd1746e7a6a",
-      "description": "Викласти оновлений застосунок на GitHub",
-      "checked": false
-    }
-  ]
+  "todos": []
 }
