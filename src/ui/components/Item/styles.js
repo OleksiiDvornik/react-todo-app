@@ -27,7 +27,7 @@ const useStyles = createUseStyles({
             '&::after': {
                 content: '""',
                 display: 'block',
-                width: '75%',
+                width: '73%',
                 height: 2,
                 backgroundColor: 'rgba(255, 255, 255, 0.5)',
                 position: 'absolute',
@@ -74,6 +74,31 @@ const useStyles = createUseStyles({
         '&:hover': {
             cursor: 'pointer',
             backgroundImage:`url(${removeIconHover})`
+        }
+    },
+    '@media (max-width: 576px)': {
+        item: {
+            '&.checked': {
+                '&::after': {
+                    width: '70%'  
+                }
+            } 
+        },
+        button: {
+            minWidth: 16,
+            minHeight: 16,
+        },
+        deleteButton: {
+            marginLeft: 4
+        }
+    },
+    '@media (max-width: 430px)': {
+        item: {
+            '&.checked': {
+                '&::after': {
+                    width: '62%'  
+                }
+            } 
         }
     }
 })

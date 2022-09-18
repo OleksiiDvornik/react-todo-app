@@ -37,6 +37,11 @@ const useStyles = createUseStyles({
         '&:hover': {
             cursor: 'pointer'
         }
+    },
+    '@media (max-width: 576px)': {
+        label: {
+            marginBottom: 16
+        }
     }
 });
 

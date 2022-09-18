@@ -47,6 +47,16 @@ const useStyles = createUseStyles({
             cursor: 'pointer',
             background: colors.buttonBackgroundHover
         }
+    },
+    '@media (max-width: 576px)': {
+        input: {
+            '& input': {
+                fontSize: 14, 
+            }
+        },
+        button: {
+            fontSize: 14,
+        }
     }
 })
 

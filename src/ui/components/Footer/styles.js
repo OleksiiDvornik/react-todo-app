@@ -23,6 +23,7 @@ const useStyles = createUseStyles({
         fontSize: 14,
         fontFamily: fonts.fontFamily,
         color: 'rgba(255, 255, 255, 0.7)',
+        padding: 0,
         backgroundColor: 'transparent',
         transition: 'all 0.3s',
         '&:hover': {

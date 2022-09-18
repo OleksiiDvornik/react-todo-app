@@ -6,7 +6,7 @@ const { colors } = theme;
 
 const useStyles = createUseStyles({
     todos: {
-        width: 576,
+        width: '100%',
         backgroundColor: colors.todosBackground,
         borderRadius: 16,
         boxShadow: '0 0 4px 1px rgba(0, 0, 0, 0.2)',

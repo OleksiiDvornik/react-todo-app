@@ -1,3 +1,19 @@
 {
-  "todos": []
+  "todos": [
+    {
+      "id": "335aba4b-ef82-4687-88f4-6fa4864dc74a",
+      "description": "New task",
+      "checked": false
+    },
+    {
+      "id": "4cb3d234-90c6-4810-9018-f1b26631c7f2",
+      "description": "Another new task",
+      "checked": false
+    },
+    {
+      "id": "9f133681-8087-4f16-b6d4-e9d79a782891",
+      "description": "One more task",
+      "checked": false
+    }
+  ]
 }

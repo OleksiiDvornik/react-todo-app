@@ -24,12 +24,23 @@ const useStyles = createUseStyles({
             // eslint-disable-next-line
             background: 'linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(69,177,252,1) 100%)'
         },
+        '.container': {
+            maxWidth: 576,
+            minWidth: 320,
+            margin: '0 auto',
+            padding: '0 20px'
+        },
         '@keyframes lineThrough': {
             '0%': {
                 width: 0
             },
             '100%': {
                 width: '75%'
+            }
+        },
+        '@media (max-width: 576px)': {
+            '.body': {
+                fontSize: 14 
             }
         }
     }

@@ -60,6 +60,16 @@ const useStyles = createUseStyles({
                 background: 'linear-gradient(90deg, rgb(209, 101, 255) 0%, rgb(198, 67, 255) 100%)'
             }
         }
+    },
+    '@media (max-width: 576px)': {
+        input: {
+            fontSize: 14, 
+        },
+        button: {
+            fontSize: 14,
+            padding: '0 12px',
+            width: 'calc(50% - 8px)'
+        }
     }
 })
 

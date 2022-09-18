@@ -6,6 +6,12 @@ const useStyles = createUseStyles({
         fontWeight: 400,
         textAlign: 'center',
         marginBottom: 32
+    },
+    '@media (max-width: 576px)': {
+        title: {
+            fontSize: 20, 
+            marginBottom: 24
+        }
     }
 })
 

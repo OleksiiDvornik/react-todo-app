@@ -10,6 +10,11 @@ const useStyles = createUseStyles({
         paddingBottom: 12,
         marginBottom: 20,
         borderBottom: `2px solid ${colors.subtitleBorder}`
+    },
+    '@media (max-width: 576px)': {
+        subtitle: {
+            fontSize: 16, 
+        }
     }
 })
 
