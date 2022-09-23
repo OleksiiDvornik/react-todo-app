@@ -2,7 +2,7 @@
 
 ![Todo app preview cover](https://repository-images.githubusercontent.com/528359213/2e42a33c-3462-449e-8219-a02fbad2fc8a)
 
-A simple to-do app built with React and json-server. The app can add a few items at the same time, delete, mark complete and edit existing tasks. All items are stored in demo data base file which created by json-server library.
+A simple to-do app built with React and json-server. The app can add a few items at the same time, delete, mark complete and edit existing tasks. All items are stored in demo database file which created by json-server library.
 
 ## Required packages
 
