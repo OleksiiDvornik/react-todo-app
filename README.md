@@ -50,4 +50,4 @@ src/
 
 ![Demo](https://github.com/OleksiiDvornik/react-todo-app/blob/main/demo.gif)
 
-You can also test the application here: <a href="https://vercel.com/oleksiidvornik/react-todo-app" target="_blank">https://vercel.com/oleksiidvornik/react-todo-app</a>
+You can also test the application here: <a href="https://react-todo-app-oleksiidvornik.vercel.app/" target="_blank">https://react-todo-app-oleksiidvornik.vercel.app/</a>
